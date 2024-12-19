@@ -1,0 +1,203 @@
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins" sans-serif;
+}
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body {
+  background: var(--Very-Light-Gray);
+}
+.container{
+  width: 90%;
+  background-color: var(--Very-Light-Gray);
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+.up {
+  text-align: center;
+  width: 98%;
+  margin: 2% auto;
+  background-color: var(--Very-Light-Gray);
+}
+.up > h1 {
+  font-size: xx-large;
+  font-weight: lighter;
+  color: var(--Grayish-Blue);
+}
+.up > h2 {
+  font-size: xx-large;
+  font-weight: bolder;
+  word-spacing: 5px;
+  color: var(--Very-Dark-Blue);
+}
+.up > p {
+  color: var(--Grayish-Blue);
+}
+.down {
+  background-color: var(--Very-Light-Gray);
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.supervisor {
+  background-color: aliceblue;
+  border-top: 3px solid var(--Cyan);
+  padding: 1.2rem;
+  border-radius: 8px;
+  height: 40%;
+  margin: 1% auto;
+  width: 98%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 32px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.supervisor > h3 {
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 0.5rem;
+}
+.supervisor > p {
+  color: var(--Grayish-Blue);
+  font-size: smaller;
+  line-height: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+.supervisor > img {
+  max-width: fit-content;
+  align-self: flex-end;
+}
+.tk {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.team-builder,.karma{
+  display: flex;
+  flex-direction: column;
+}
+.team-builder >img,.karma >img{
+  max-width: fit-content;
+  align-self: flex-end;
+}
+.team-builder {
+  background-color: aliceblue;
+  border-top: 3px solid var(--Red);
+  padding: 1.2rem;
+  height: 40%;
+  width: 98%;
+  border-radius: 8px;
+  margin: 1% auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 32px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.team-builder > h3 {
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 0.5rem;
+}
+.team-builder > p {
+  color: var(--Grayish-Blue);
+  font-size: smaller;
+  line-height: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+.karma {
+  background-color: aliceblue;
+  border-top: 3px solid var(--Orange);
+  padding: 1.2rem;
+  border-radius: 8px;
+  height: 40%;
+  width: 98%;
+  margin: 1% auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 32px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.karma > h3 {
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 0.5rem;
+}
+.karma > p {
+  color: var(--Grayish-Blue);
+  font-size: smaller;
+  line-height: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.calculator {
+  background-color: aliceblue;
+  border-top: 3px solid var(--Blue);
+  padding: 1.2rem;
+  border-radius: 8px;
+  height: 40%;
+  margin: 1% auto;
+  width: 98%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 32px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.calculator > h3 {
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 0.5rem;
+}
+.calculator > p {
+  color: var(--Grayish-Blue);
+  font-size: smaller;
+  line-height: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+.calculator > img {
+  max-width: fit-content;
+  align-self: flex-end;
+}
+@media (min-width:1500px){
+  .container{
+    width: calc(100vw - 30%);
+  }
+}
+
+@media (min-width:1248px){
+  .container{
+    width: calc(100vw - 15%);
+  }
+}
+
+@media (min-width:1150px){
+  .container{
+    height: 100vh;
+  }
+  .down{
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .tk,.supervisor,.calculator{
+    flex: 1;
+  }
+  .supervisor{
+    order: 0;
+  }
+  .tk{
+    order: 1;
+  }
+  .calculator{
+    order: 2;
+    position: relative;
+    left: 2em;
+  }
+  .karma{
+    gap: 1.1em;
+  }
+}
+
